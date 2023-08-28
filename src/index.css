@@ -54,7 +54,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 98;
   width: 90px;
-  max-height: 0;
+  max-height: 0%;
   min-width: 90px;
   transition: max-height 0.15s ease-out;
   overflow: hidden;
@@ -77,12 +77,12 @@
 }
 
 .dropdown:hover .dropdown-content {
-  max-height: 500px;
+  max-height: 260px;
   min-width: 90px;
-  transition: max-height 0.25s ease-in;
+  transition: max-height 0.50s ease-in;
 }
 .dropdown:hover {
-  max-height: 500px;
+  max-height: 330px;
   min-width: 90px;
   transition: max-height 0.25s ease-in;
 }
@@ -94,6 +94,7 @@
 }
 
 .topnav {
+  animation: fadeIn 0.3s;
   position: fixed;
   top: 0;
   left: 0;
