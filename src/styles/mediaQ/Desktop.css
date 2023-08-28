@@ -1,0 +1,54 @@
+@media only screen and (min-width: 850px) {
+  .body {
+    margin-right: auto;
+  }
+
+  .popup img {
+    width: 435px;
+    max-width: 435px;
+    height: inherit;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 #428581;
+  }
+
+  .popup-inner h1 {
+    color: #403d58;
+    position: absolute;
+    left: 545px;
+    border-bottom: 4px solid #403d58;
+  }
+  .popup-inner h2 {
+    position: absolute;
+    left: 545px;
+    bottom: 100px;
+    background-color: #d1fffb;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  .popup-inner p {
+    position: absolute;
+    font-weight: 500;
+    left: 545px;
+    top: 150px;
+    width: 300px;
+  }
+
+  .popup-inner .cart-btn {
+    background-color: #cafffc;
+    font-size: xx-large;
+    border-radius: 10px;
+    position: absolute;
+    width: 300px;
+    left: 545px;
+    bottom: 50px;
+    transition: all 0.4s ease-in-out;
+  }
+  .lowerbody {
+    min-width: 1000px;
+    grid-template-columns: repeat(5, 1fr)
+  }
+  .card img {
+    min-width: 50px;
+  }
+}
