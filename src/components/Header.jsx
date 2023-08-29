@@ -12,6 +12,7 @@ function Header() {
   return (
     <>
       <div className="topnav">
+        <h1>Website</h1>
         <a className="active" href="home">
           Home
         </a>

@@ -1,4 +1,4 @@
-import Product from "./Product";
+import ProductLowerBody from "./ProductLowerBody";
 import "react-slideshow-image/dist/styles.css";
 import Popup from "./Popup";
 import { useState } from "react";
@@ -24,12 +24,18 @@ function LowerBody() {
 
   return (
     <>
-      <input
-        type="text"
-        placeholder="Search"
-        className="LowerBodySearchBar"
-        onChange={(e) => setSearch(e.target.value)}
-      ></input>
+      <form className="lowerform">
+        <input
+          type="text"
+          placeholder="Search"
+          className="LowerBodySearchBar"
+          onChange={(e) => setSearch(e.target.value)}
+        ></input>
+        <button onClick={(e) => {setSearch('shirt'), e.preventDefault()}}>Shirts</button>
+        <button onClick={(e) => {setSearch('cap'), e.preventDefault()}}>Caps</button>
+        <button onClick={(e) => {setSearch('shoes'), e.preventDefault()}}>Shoes</button>
+        <button onClick={(e) => {setSearch('short'), e.preventDefault()}}>Shorts</button>
+      </form>
 
       <div className="lowerbody">
         <Popup trigger={buttonPopup} setTrigger={setButtonPopUp}>
@@ -62,7 +68,10 @@ function LowerBody() {
                 )
               }
             >
-              <Product img={product.img} productPrice={product.price}/>
+              <ProductLowerBody
+                img={product.img}
+                productPrice={product.price}
+              />
             </motion.div>
           ))}
       </div>

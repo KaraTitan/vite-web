@@ -44,11 +44,19 @@
     transition: all 0.4s ease-in-out;
   }
   .lowerbody {
-    min-width: 400px;
+    min-width: 790px;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr)
+  }
+  .lowerform {
+    left: 35%;
+    position: relative;
   }
   .card img {
     min-width: 20px;
+  }
+  .lowerform button {
+    display: none;
   }
 
 }

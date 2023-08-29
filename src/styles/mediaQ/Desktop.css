@@ -1,4 +1,4 @@
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1030px) {
   .body {
     margin-right: auto;
   }
@@ -45,10 +45,18 @@
     transition: all 0.4s ease-in-out;
   }
   .lowerbody {
-    min-width: 1000px;
-    grid-template-columns: repeat(5, 1fr)
+    min-width: 4px;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
   }
-  .card img {
-    min-width: 50px;
+  .lowerform {
+    left: 80%;
+    position: absolute;
+  }
+  .lowerbodycard img {
+    min-width: 100px;
+  }
+  .lowerform button {
+    display: block;
   }
 }

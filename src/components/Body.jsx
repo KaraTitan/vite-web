@@ -31,7 +31,6 @@ function Body() {
           <img src={image} />
           <h2>${price}</h2>
         </Popup>
-
         <Slide
           indicators={true}
           pauseOnHover={true}
@@ -39,6 +38,7 @@ function Body() {
           infinite={true}
           transitionDuration={500}
           autoplay={true}
+
         >
           {db.map((product) => (
             <div
