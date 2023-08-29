@@ -61,14 +61,4 @@
   .lowerform button {
     display: none;
   }
-  .LowerBodySearchBar[type="text"] {
-    padding: 10px;
-    margin: auto;
-    border: none;
-    font-size: 20px;
-    background-color: #ffbbb2af;
-    border-radius: 20px;
-    text-align: center;
-    width: 50%;
-  }
 }

@@ -173,7 +173,7 @@
 }
 
 .body {
-  margin: 100px;
+  margin: 130px;
   margin-left: auto;
   margin-right: auto;
   background-color: #a6cffd;
@@ -198,7 +198,7 @@
   background-size: cover;
   height: auto;
   width: 580px;
-  margin-left: 15%;
+  margin-left: 14%;
 }
 
 .card {
@@ -275,22 +275,22 @@
 
 .lowerform {
   padding-top: 20px;
-  padding-left: 40px;
+  padding-left: 0px;
   padding-right: 40px;
   border-radius: 20px;
   background-color: #477481;
-  left: 80%;
-  width: 20%;
+  left: 100%;
+  width: 450px;
   position: absolute;
 }
 .LowerBodySearchBar[type="text"] {
-  padding: 10px;
+  padding: 20px;
   border: none;
   font-size: 20px;
   background-color: #ffbbb2af;
   border-radius: 20px;
   text-align: center;
-  width: 50%;
+  width: 350px;
   display: block;
   margin: 15px auto;
 }

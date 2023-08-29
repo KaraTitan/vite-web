@@ -24,18 +24,19 @@ function LowerBody() {
 
   return (
     <>
-      <form className="lowerform">
-        <input
+            <input
           type="text"
           placeholder="Search"
           className="LowerBodySearchBar"
           onChange={(e) => setSearch(e.target.value)}
         ></input>
+      {/* <form className="lowerform">
+
         <button onClick={(e) => {setSearch('shirt'), e.preventDefault()}}>Shirts</button>
         <button onClick={(e) => {setSearch('cap'), e.preventDefault()}}>Caps</button>
         <button onClick={(e) => {setSearch('shoes'), e.preventDefault()}}>Shoes</button>
         <button onClick={(e) => {setSearch('short'), e.preventDefault()}}>Shorts</button>
-      </form>
+      </form> */}
 
       <div className="lowerbody">
         <Popup trigger={buttonPopup} setTrigger={setButtonPopUp}>

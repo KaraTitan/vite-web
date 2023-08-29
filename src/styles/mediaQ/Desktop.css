@@ -46,7 +46,7 @@
   }
   .lowerbody {
     min-width: 4px;
-    width: 80%;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
   }
   .lowerform {
