@@ -2,9 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  /* background-image: url("https://img.freepik.com/free-vector/flat-design-shopping-pattern-design_23-2149656934.jpg?w=740&t=st=1692679345~exp=1692679945~hmac=f39a56eb5b8d2681530c97ad889074e567ddfe51095cb714c38773aff04c6216"); */
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #ff9b7f;
 }
 
@@ -22,6 +19,37 @@
   background: #555;
 }
 
+.topnav {
+  animation: fadeIn 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  color: #fff;
+  z-index: 89;
+  background-color: #707d8d;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+}
+
+.topnav h1 {
+  float: left;
+  color: #f2f2f2;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 1px 1px 10px #fff, 1px 1px 10px #fd4c4c;
+}
+.topnav a {
+  position: relati;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
 .dropdown {
   display: none;
   position: fixed;
@@ -91,38 +119,6 @@
   border-bottom: 1px solid #e0e0e0;
   transition: max-height 0.25s ease-in;
 }
-
-.topnav {
-  animation: fadeIn 0.3s;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 99%;
-  color: #fff;
-  z-index: 89;
-  background-color: #707d8d;
-  overflow: hidden;
-  padding: 10px;
-  text-align: center;
-}
-
-.topnav h1 {
-  float: left;
-  color: #f2f2f2;
-  padding: 5px 15px;
-  text-decoration: none;
-  font-size: 30px;
-  text-shadow: 1px 1px 10px #fff, 1px 1px 10px #fd4c4c;
-}
-.topnav a {
-  position: relati;
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-  font-size: 30px;
-}
 .count {
   float: left;
   z-index: 2;
@@ -164,7 +160,6 @@
   border-radius: 50px;
   background-color: #6053af9d;
   margin: 100px;
-  /* display: block; */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -251,7 +246,6 @@
   padding: 0px 10px;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(53, 53, 53, 0.2);
@@ -504,6 +498,4 @@
   background-color: rgb(70, 95, 91);
   color: white;
   text-align: center;
-  /* border-top-left-radius: 20px; */
-  /* border-top-right-radius: 20px; */
 }
