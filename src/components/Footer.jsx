@@ -1,7 +1,7 @@
 function DefaultFooter() {
   const year = new Date().getFullYear();
   return (
-    <div class="footer">
+    <div className="footer">
       <footer>{`Copyright © ${year}`}</footer>
     </div>
   );

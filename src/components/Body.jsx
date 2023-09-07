@@ -4,7 +4,7 @@ import "react-slideshow-image/dist/styles.css";
 import Popup from "./Popup";
 import { useState } from "react";
 import db from "../data/db.json";
-import '../styles/Body.css'
+import "../styles/Body.css";
 
 function Body() {
   const [buttonPopup, setButtonPopUp] = useState(false);
@@ -43,6 +43,7 @@ function Body() {
         >
           {db.map((product) => (
             <div
+              key={product.name}
               className="each-slide-effect"
               onClick={() =>
                 handleClick(

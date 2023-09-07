@@ -29,11 +29,11 @@ function Header() {
           {cartnum}
         </Link>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn" for="btnControl">
+      <div className="dropdown">
+        <button className="dropbtn">
           <Icon icon="material-symbols:list" />
         </button>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
           <Link to="vite-web/">Home</Link>
           <Link to="vite-web/contact">Contact</Link>
           <Link to="vite-web/cart">
