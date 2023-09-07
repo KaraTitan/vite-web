@@ -1,40 +1,45 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import { atom, useRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
+import { Link } from "react-router-dom";
+import '../styles/Header.css';
+import { cartNumber } from "../GlobalStates.jsx"
+import { useEffect } from "react";
 
-const cartNumber = atom({
-  key: "cartState",
-  default: 0,
-});
+
 function Header() {
   const [cartnum, setCartNum] = useRecoilState(cartNumber);
+  const textFromStorage =
+    JSON.parse(localStorage.getItem("my-items") || "[]") || [];
+
+  useEffect(() => {
+    setCartNum(textFromStorage.length);
+  }, [textFromStorage.length]);
 
   return (
     <>
       <div className="topnav">
-        <h1>Website</h1>
-        <a className="active" href="home">
+        <h1>Store</h1>
+        <Link to="vite-web/" className="active">
           Home
-        </a>
-        <a href="contact">Contact</a>
-        <a href="about">About</a>
-        <a href="cart" style={{ float: "right" }} className="count">
+        </Link>
+        <Link to="vite-web/contact">Contact</Link>
+        <Link to="vite-web/cart" style={{ float: "right" }} className="count">
           <Icon icon="mi:shopping-cart" />
           {cartnum}
-        </a>
+        </Link>
       </div>
       <div class="dropdown">
         <button class="dropbtn" for="btnControl">
           <Icon icon="material-symbols:list" />
         </button>
         <div class="dropdown-content">
-          <a href="Home">Home</a>
-          <a href="contact">Contact</a>
-          <a href="about">About</a>
-          <a href="cart">
+          <Link to="vite-web/">Home</Link>
+          <Link to="vite-web/contact">Contact</Link>
+          <Link to="vite-web/cart">
             <Icon icon="mi:shopping-cart" />
             {cartnum}
-          </a>
+          </Link>
         </div>
       </div>
     </>

@@ -1,0 +1,125 @@
+.topnav {
+  animation: fadeIn 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  color: #fff;
+  z-index: 89;
+  background-color: #707d8d;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+}
+
+.topnav h1 {
+  float: left;
+  color: #f2f2f2;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 1px 1px 10px #fff, 1px 1px 1px #fd4c4c;
+}
+.topnav a {
+  position: relative;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #62b4e4;
+  color: black;
+  border-radius: 10px;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #e4654f;
+  color: white;
+  border-radius: 10px;
+}
+.dropdown {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-height: 70px;
+  height: 50%;
+  z-index: 89;
+  background-color: #66d7d1;
+  border-radius: 10px;
+  padding: 10px;
+}
+.dropbtn {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #f16c6c;
+  color: #0f0f0f;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content {
+  position: fixed;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 98;
+  width: 90px;
+  max-height: 0%;
+  min-width: 90px;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:aci {
+  background-color: #e2e2e2;
+}
+
+.dropdown:hover .dropdown-content {
+  max-height: 260px;
+  min-width: 90px;
+  transition: max-height 0.3s ease-in;
+}
+.dropdown:hover {
+  max-height: 330px;
+  min-width: 90px;
+  transition: max-height 0.25s ease-in;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+  transition: max-height 0.25s ease-in;
+}
+.count {
+  float: left;
+  z-index: 2;
+  font-size: 16px;
+  border-radius: 20%;
+  background: #d60b28;
+  line-height: 16px;
+
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}

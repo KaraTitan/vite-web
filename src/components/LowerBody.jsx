@@ -4,6 +4,8 @@ import Popup from "./Popup";
 import { useState } from "react";
 import db from "../data/db.json";
 import { motion } from "framer-motion";
+import "../styles/LowerBody.css";
+import { Icon } from "@iconify/react";
 
 function LowerBody() {
   const [buttonPopup, setButtonPopUp] = useState(false);
@@ -24,27 +26,22 @@ function LowerBody() {
 
   return (
     <>
-            <input
-          type="text"
-          placeholder="Search"
-          className="LowerBodySearchBar"
-          onChange={(e) => setSearch(e.target.value)}
-        ></input>
-      {/* <form className="lowerform">
-
-        <button onClick={(e) => {setSearch('shirt'), e.preventDefault()}}>Shirts</button>
-        <button onClick={(e) => {setSearch('cap'), e.preventDefault()}}>Caps</button>
-        <button onClick={(e) => {setSearch('shoes'), e.preventDefault()}}>Shoes</button>
-        <button onClick={(e) => {setSearch('short'), e.preventDefault()}}>Shorts</button>
-      </form> */}
+      <input
+        type="text"
+        placeholder="Search"
+        className="LowerBodySearchBar"
+        onChange={(e) => setSearch(e.target.value)}
+      ></input>
 
       <div className="lowerbody">
-        <Popup trigger={buttonPopup} setTrigger={setButtonPopUp}>
-          <h1>{productname}</h1>
-          <p>{desc}</p>
-          <img src={image} />
-          <h2>${price}</h2>
-        </Popup>
+        <Popup
+          trigger={buttonPopup}
+          setTrigger={setButtonPopUp}
+          productname={productname}
+          desc={desc}
+          image={image}
+          price={price}
+        />
 
         {db
           .filter((product) => {
@@ -70,6 +67,7 @@ function LowerBody() {
               }
             >
               <ProductLowerBody
+                produtName={product.name}
                 img={product.img}
                 productPrice={product.price}
               />

@@ -23,8 +23,9 @@ function ProductLowerBody(props) {
       onMouseOut={handleMouseOut}
     >
       <img src={props.img} />
-      <h2>{props.produtName}</h2>
-      {isHovering && <h3>{props.productPrice}</h3>}
+
+      {isHovering && <h2>{props.produtName}</h2>}
+      {isHovering && <h3>${props.productPrice}</h3>}
     </motion.div>
   );
 }

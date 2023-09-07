@@ -4,6 +4,7 @@ import "react-slideshow-image/dist/styles.css";
 import Popup from "./Popup";
 import { useState } from "react";
 import db from "../data/db.json";
+import '../styles/Body.css'
 
 function Body() {
   const [buttonPopup, setButtonPopUp] = useState(false);
@@ -24,12 +25,14 @@ function Body() {
     <>
       {/* <Reviews /> */}
       <div className="body">
-        <Popup trigger={buttonPopup} setTrigger={setButtonPopUp}>
-          <h1>{productname}</h1>
-          <p>{desc}</p>
-          <img src={image} />
-          <h2>${price}</h2>
-        </Popup>
+        <Popup
+          trigger={buttonPopup}
+          setTrigger={setButtonPopUp}
+          productname={productname}
+          desc={desc}
+          image={image}
+          price={price}
+        />
         <Slide
           indicators={true}
           pauseOnHover={true}
@@ -37,11 +40,9 @@ function Body() {
           infinite={true}
           transitionDuration={500}
           autoplay={true}
-
         >
           {db.map((product) => (
             <div
-              key={product}
               className="each-slide-effect"
               onClick={() =>
                 handleClick(
