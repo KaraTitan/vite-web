@@ -4,7 +4,7 @@ import Cart from "./components/Cart";
 import { RecoilRoot } from "recoil";
 import FrontPage from "./components/FrontPage";
 import ContactUS from "./components/ContactUs";
-import CheckOut from "./components/CheckOut";
+import CheckOut from "./components/Checkout";
 
 function App() {
   return (
