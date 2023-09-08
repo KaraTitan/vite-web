@@ -20,7 +20,9 @@ function Cart() {
   return (
     <>
       <div className="cartbody">
-        <Link to="/vite-web/checkout" className="checkout-btn">Check Out</Link>
+        <Link to="/vite-web/checkout" className="checkout-btn">
+          Check Out
+        </Link>
         {cart.map((product, index) => (
           <div className="cartproduct" key={index}>
             <h1>{product.name}</h1>

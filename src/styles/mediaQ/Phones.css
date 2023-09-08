@@ -9,7 +9,6 @@
   }
 
   .popup img {
-    
     width: 70%;
     height: 70%;
     display: block;
@@ -63,16 +62,16 @@
   }
 
   .contactbody {
-    padding-top: 1px;
+    
     padding-bottom: 6%;
     width: 100%;
-    margin-top: 140px;
+    margin-top: 100px;
   }
   .colorful-form {
     max-width: 70%;
     min-width: 70%;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 50px;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 10px;
@@ -90,13 +89,14 @@
   }
 
   .form-input {
-    width: 90%;
+    width: 95%;
     padding: 10px;
     border: none;
     background-color: #fff;
     color: #333;
     border-radius: 5px;
-    max-width: 480px;
+    max-width: 390px;
+    min-width: 390px;
     max-height: 300px;
   }
   textarea.form-input {
@@ -104,7 +104,6 @@
     min-height: 150px;
   }
   .cartbody {
-
     width: 90%;
     padding: 10px;
     transition: all 0.2s ease-in-out;
@@ -121,7 +120,7 @@
     min-width: 500px;
     height: 500px;
   }
-  
+
   .each-slide-effect > div {
     display: flex;
     align-items: center;
@@ -131,7 +130,7 @@
     width: 80%;
     margin-left: 10%;
   }
-  
+
   .card img {
     border-radius: 10px;
     width: 90%;
@@ -154,5 +153,4 @@
     top: 72%;
     transition: all 0.4s ease-in-out;
   }
-  
 }
