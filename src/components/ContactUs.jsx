@@ -1,6 +1,8 @@
 import "../styles/ContactUs.css";
+import { useNavigate } from "react-router-dom";
 
 function ContactUS() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="contactbody">
@@ -41,7 +43,7 @@ function ContactUS() {
               id="message"
             ></textarea>
           </div>
-          <button className="form-button" type="submit">
+          <button className="form-button" type="submit" onClick={() => navigate("/vite-web/")}>
             Submit
           </button>
         </form>

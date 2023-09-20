@@ -1,6 +1,8 @@
 import "../styles/CheckOut.css";
+import { useNavigate } from "react-router-dom";
 
 function CheckOut() {
+  const navigate = useNavigate();
   return (
     <>
       <div class="modal">
@@ -56,7 +58,9 @@ function CheckOut() {
               </div>
             </div>
           </div>
-          <button class="checkout-btn">Checkout</button>
+          <button className="checkout-btn" onClick={() => navigate("/vite-web/")}>
+            Checkout
+          </button>
         </form>
       </div>
     </>
